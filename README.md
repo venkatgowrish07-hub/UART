@@ -68,8 +68,9 @@ The system was:
 
 The testbench transmits multiple 8-bit values through the UART transmitter and verifies that the receiver reconstructs the same data correctly and preocessed output data.
 
-The UART_01.v module follows the data flow: ``` TX → [wire] → RX → processed_data → dataout ```
-The UART_01.v module follows the data flow: ``` TX ──[wire]──► RX ──► process ──► TX again ──► dataout```
+The UART_01.v module follows the data flow: ``` TX → [wire] → RX → processed_data → dataout ```.
+
+The UART_02.v module follows the data flow: ``` TX ──[wire]──► RX ──► process ──► TX again ──► dataout```
 
 For simulation purpose update txfinval to 16 and rxfinval to 1 in baud generator (`baud_rate_generator.v`)
 
