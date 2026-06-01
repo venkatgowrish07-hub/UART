@@ -44,7 +44,7 @@ initial begin
 end
 
 initial begin
-    $dumpfile("uart_fixed.vcd");
+    $dumpfile("uart.vcd");
     $dumpvars(0, uarttoptb);
 end
 
