@@ -68,6 +68,7 @@ The system was:
 
 The testbench transmits multiple 8-bit values through the UART transmitter and verifies that the receiver reconstructs the same data correctly.
 
+For simulation purpose update txfinval to 16 and rxfinval to 1 in baud generator (`baud_rate_generator.v`)
 Simulation was performed using:
 - Icarus Verilog
 - GTKWave
